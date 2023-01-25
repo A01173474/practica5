@@ -15,13 +15,13 @@ $ ('.agregar').click(function(e){  //Boton agregar
     }
 })
 
-$(".Lista").on('click','checar',function(event){  //Boton check
+$(".Lista").on('click','.checar',function(event){  //Boton check
     event.preventDefault();
-    $(this).parent().toggleClass('chec')
+    $(this).parent().toggleClass('done')
 })
 
 
-$(".Lista").on('click','del',function(event){  //Boton borrar
+$(".Lista").on('click','.del',function(event){  //Boton borrar
     event.preventDefault();
-    $(this).parent().parent().remove();
+    $(this).parent().remove();
 })
